@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Assistant:wght@300&family=Dancing+Script:wght@600&family=Martel:wght@200&family=Playfair+Display&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap');
+
+
+.containerMatriz {
+    width: 70%;
+    background-color: rgb(211, 220, 226);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    height: 500px;
+    margin-top: 30px;
+    border-radius: 2%;
+   
+    
+
+}
+
+.bgimgMatriz{
+    margin-top: 30px;
+    background-color: #5A7E64;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+   
+}
+
+.area1{
+    width: 49%;
+    border-bottom: solid 1px #ed6c02;
+    border-right: solid 1px #ed6c02;
+    text-align: center;
+   
+}
+
+.area2{
+    width: 49%;
+    border-bottom: solid 1px #ed6c02;
+    text-align: center;
+
+}
+.area3{
+    border-right: solid 1px #ed6c02;
+    width: 49%;
+    text-align: center;
+}
+.area4{
+    width: 49%;
+    text-align: center;
+}
+
+.subtitleMatriz {
+    font-family: 'Assistant', sans-serif;
+    color: rgb(44, 41, 41);
+   
+    
+}

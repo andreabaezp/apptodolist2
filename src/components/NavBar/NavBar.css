@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Assistant:wght@300&family=Dancing+Script:wght@600&family=Martel:wght@200&family=Montagu+Slab&family=Playfair+Display&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap');
+
+
+.titleNavBar {
+   font-family: 'Montagu Slab', serif; ;
+   font-weight: 700;
+   font-size: x-large;
+   color:#ff9800;
+}
+
+.wrapNavBar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 0px auto;
+    background-color: antiquewhite;
+
+
+
+}
+.imgNavBar {
+    object-fit: cover;
+    width: 80px;
+    margin-right: 20px;
+    padding: 10px 0px 10px 0px;
+}
