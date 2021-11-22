@@ -9,10 +9,8 @@ const state = {
     "ni-nu": [],
   },
   importance: "",
-  alert: false,
-  alertMessage: "",
-  anchorEls: null,
-  taskMenusOpen: null,
+  isSnackBarOpen: false,
+  snackBarMessage: "",
 };
 
 function updateStates(state, { type, payload }) {
@@ -20,9 +18,9 @@ function updateStates(state, { type, payload }) {
     case "UPDATE_TASK":
       return { ...state, task: payload };
     case "UPDATE_ALERT":
-      return { ...state, alert: payload };
+      return { ...state, isSnackBarOpen: payload };
     case "UPDATE_ALERT_MESSAGE":
-      return { ...state, alertMessage: payload };
+      return { ...state, snackBarMessage: payload };
     case "PUSH_CURRENT_TASK":
       state.tasks[state.importance].push({
         id: new Date().getTime(),
@@ -41,14 +39,14 @@ function updateStates(state, { type, payload }) {
         return payload.id !== task.id;
       });
       state.tasks[payload.importance] = filteredTasks;
-      const copied = JSON.parse(JSON.stringify(state.tasks))
+      const copied = JSON.parse(JSON.stringify(state.tasks));
       return { ...state, tasks: copied };
     case "TOGGLE_DONE":
       const taskToEdit = state.tasks[payload.importance].find((task) => {
         return payload.id === task.id;
       });
       taskToEdit.done = !taskToEdit.done;
-      const copied2 = JSON.parse(JSON.stringify(state.tasks))
+      const copied2 = JSON.parse(JSON.stringify(state.tasks));
       return { ...state, tasks: copied2 };
     default:
       return state;

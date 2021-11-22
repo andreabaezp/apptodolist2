@@ -9,10 +9,8 @@ function TaskTextField(store) {
 
   return (
     <TextField
-      id="standard-basic"
       label="Write your task"
       variant="standard"
-      name="task"
       value={store.task}
       onChange={handelInputChangex}
       type="text"
