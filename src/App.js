@@ -13,6 +13,7 @@ import mapStateToProps from "./store/helper";
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 import { orange, green, purple } from "@mui/material/colors";
 import Meme from "./components/Meme/Meme";
+import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
 
 const theme = createTheme({
   palette: {
@@ -60,14 +61,10 @@ function App(store) {
           <AddTaskButton />
         </form>
         <Matriz />
-
         <Snackbar open={store.isSnackBarOpen} message={store.snackBarMessage} />
       </ThemeProvider>
-
-      <div className="containerAll">
-        <h2>Welcome to the adult meme quote generator!</h2>
-        <Meme />
-      </div>
+      <DragAndDrop />
+      <Meme />
     </>
   );
 }

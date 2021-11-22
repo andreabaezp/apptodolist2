@@ -44,3 +44,16 @@ body {
 .justify-around {
   justify-content: space-around;
 }
+
+.border-radius{
+  border-radius:5%;
+}
+
+.margin-top{
+  margin-top: 20px;
+  
+}
+
+.text-align {
+  text-align: center;
+}

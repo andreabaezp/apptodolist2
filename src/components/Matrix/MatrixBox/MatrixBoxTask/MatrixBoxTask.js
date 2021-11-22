@@ -125,6 +125,9 @@ function MatrixBoxTasks(store) {
             </ListItemIcon>
             Delete
           </MenuItem>
+
+        
+
         </Menu>
       </div>
     </div>

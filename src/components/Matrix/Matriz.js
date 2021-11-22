@@ -14,7 +14,7 @@ function Matriz(store) {
         <MatrixBox boxImportance="i-u" boxTitle="Important / Urgent" boxClass="area1"/>
         <MatrixBox boxImportance="i-nu" boxTitle="Important / not Urgent" boxClass="area2"/>
         <MatrixBox boxImportance="ni-u" boxTitle="Not important / Urgent" boxClass="area3"/>
-        <MatrixBox boxImportance="ni-nu" boxTitle="Not important / not Urgent" boxClass="area4"/>
+        <MatrixBox boxImportance="ni-nu" boxTitle="Not important / not Urgent/ to delegate" boxClass="area4"/>
 
         </div>
       </div>

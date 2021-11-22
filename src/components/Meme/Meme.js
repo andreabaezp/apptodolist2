@@ -27,7 +27,6 @@ const bPhrases = [
   "to let go",
 ];
 
-
 export default function Meme() {
   const [msg, setMsg] = useState("");
   const [bg, setBg] = useState();
@@ -37,20 +36,25 @@ export default function Meme() {
     const newBg = Math.floor(Math.random() * 5 + 1);
     setMsg(`sometimes ${phraseA} is the only way ${phraseB}`);
     setBg(newBg);
-  }
+  };
 
-  
   return (
-    <> 
-    <button className="buttonMeme" onClick={generate}>GENERATE</button>
-      <div className={`bgGlobal bgChooser${bg}`}>
-        <span className="spHighlight">
-          <h2>
-            <mark>{msg}</mark>
-          </h2>
-        </span>
+    <>
+    <div className="wrap-container">
+      <div className="containerAll">
+        <h2>Welcome to the adult meme quote generator!</h2>
+        <button className="buttonMeme" onClick={generate}>
+          GENERATE
+        </button>
+        <div className={`bgGlobal bgChooser${bg}`}>
+          <span className="spHighlight">
+            <h2>
+              <mark>{msg}</mark>
+            </h2>
+          </span>
+        </div>
       </div>
-     
+      </div>
     </>
   );
 }
