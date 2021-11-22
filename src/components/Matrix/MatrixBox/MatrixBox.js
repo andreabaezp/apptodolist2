@@ -1,19 +1,18 @@
 import { connect } from "react-redux";
 import mapStateToProps from "../../../store/helper";
-import MatrixBoxTasks from "./MatrixBoxTasks";
+import MatrixBoxTasks from "./MatrixBoxTask/MatrixBoxTask";
+import './MatrixBox.css'
 
 function MatrixBox(store) {
-
-
   return (
     <>
       <div className={store.boxClass}>
         <h3 className="subtitleMatriz">{store.boxTitle}</h3>
-        {store.tasks[store.boxImportance].map((task) => {
-          return (
-            <MatrixBoxTasks key={task.id} task={task} />
-          );
-        })}
+        <div className="matrix-box-wrapper">
+          {store.tasks[store.boxImportance].map((task) => {
+            return <MatrixBoxTasks key={task.id} taskParent={task} boxImportance={store.boxImportance} />;
+          })}
+        </div>
       </div>
     </>
   );

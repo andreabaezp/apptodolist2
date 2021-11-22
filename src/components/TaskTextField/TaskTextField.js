@@ -1,6 +1,6 @@
 import TextField from "@mui/material/TextField";
 import { connect } from "react-redux";
-import mapStateToProps from "../store/helper";
+import mapStateToProps from "../../store/helper";
 
 function TaskTextField(store) {
   const handelInputChangex = (event) => {

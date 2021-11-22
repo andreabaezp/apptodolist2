@@ -1,7 +1,7 @@
 import "./App.css";
 import * as React from "react";
 import RadioButtons from "./components/RadioButton/RadioButtons";
-import TaskTextField from "./components/TaskTextField";
+import TaskTextField from "./components/TaskTextField/TaskTextField";
 import AddTaskButton from "./components/AddTaskButton/AddTaskButton";
 import SetGoalField from "./components/SetGoalField/SetGoalField";
 import Matriz from "./components/Matrix/Matriz";
@@ -64,7 +64,6 @@ function App(store) {
         </form>
         <Matriz />
       
-        
         
   
         <Snackbar open={store.alert} message={store.alertMessage} />

@@ -16,7 +16,7 @@ function RadioButtons(store) {
     <FormControl component="fieldset">
       <FormLabel component="legend"></FormLabel>
 
-      <RadioGroup name="radio-buttons-group" defaultValue="i-u" onChange={setImportance} >
+      <RadioGroup name="radio-buttons-group" value={store.importance} onChange={setImportance} >
         <FormControlLabel
           value="i-u"
           control={<Radio />}
